@@ -3,6 +3,6 @@ addMdToPage(`
   (Endast de 25 första av många poster.)
   `);
 dbQuery.use('kommun-info-mongodb');
-let income = await dbQuery.collection('incomeByKommun').find({}).limit(25);
+let income = await dbQuery.collection('incomeByKommun').find({}).limit(100);
 tableFromData({ data: income });
 console.log('income from mongodb', income);
