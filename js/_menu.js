@@ -1,5 +1,6 @@
 createMenu('Statistics Template JS', [
-  { name: 'Kom igång!', script: 'trendspanaren.js' },
+  { name: 'Kom igång!', script: 'startpage.js' },
   { name: 'Övningsinstruktioner', script: 'instructions.js' },
-  { name: 'statestik', script: 'utbildningsAnalys.js' }
+  { name: 'Trendspanaren', script: 'trendspanaren.js' },
+  { name: 'Skillnadsjagaren', script: 'skillnadsjagaren.js' }
 ]);
