@@ -7,7 +7,7 @@ addMdToPage(`
 dbQuery.use('kommun-info-mongodb');
 
 // 2. Hämta datan
-let income = await dbQuery.collection('incomeByKommun').find({}).limit(100);
+let income = await dbQuery.collection('incomeByKommun').find({}).limit(25);
 
 // 3. Städa datan och fyll i slumpmässiga siffror där det saknas
 let cleanedIncome = income.map(item => {
