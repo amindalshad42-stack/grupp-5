@@ -1,7 +1,8 @@
 addMdToPage(`
 # Trendspaneren!!!!!
   `);
-dbQuery.use('kommun-info-mongodb');
-let income = await dbQuery.collection('incomeByKommun').find({}).limit(100);
+dbQuery.use('befolkning-sqlite');
+let income = await dbQuery.collection().find({}).limit(100);
 tableFromData({ data: income });
 console.log('income from mongodb', income);
+
